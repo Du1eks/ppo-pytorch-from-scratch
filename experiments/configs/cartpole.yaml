@@ -1,0 +1,22 @@
+# CartPole-v1 sanity stage: CleanRL ppo.py style defaults. Target: mean return >= 475.
+env_id: CartPole-v1
+total_timesteps: 500000
+num_envs: 4
+num_steps: 128
+update_epochs: 4
+num_minibatches: 4
+lr: 0.00025
+anneal_lr: true
+gamma: 0.99
+gae_lambda: 0.95
+use_gae: true
+clip_coef: 0.2
+clip_vloss: true
+norm_adv: true
+ent_coef: 0.01
+vf_coef: 0.5
+max_grad_norm: 0.5
+target_kl: 0.0
+normalize_obs: false
+normalize_reward: false
+hidden_sizes: [64, 64]

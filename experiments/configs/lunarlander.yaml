@@ -1,0 +1,24 @@
+# LunarLander-v3 (discrete). Target: mean return >= 200.
+# Batch 8 envs x 128 steps = 1024, 4 minibatches of 256. gamma/gae_lambda follow
+# the commonly used LunarLander settings (long-horizon credit assignment).
+env_id: LunarLander-v3
+total_timesteps: 1000000
+num_envs: 8
+num_steps: 128
+update_epochs: 4
+num_minibatches: 4
+lr: 0.0003
+anneal_lr: true
+gamma: 0.999
+gae_lambda: 0.98
+use_gae: true
+clip_coef: 0.2
+clip_vloss: true
+norm_adv: true
+ent_coef: 0.01
+vf_coef: 0.5
+max_grad_norm: 0.5
+target_kl: 0.0
+normalize_obs: false
+normalize_reward: false
+hidden_sizes: [64, 64]
