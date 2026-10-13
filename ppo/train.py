@@ -1,4 +1,4 @@
-"""Training entry point (Session B): python -m ppo.train --env-id CartPole-v1 ..."""
+"""Training entry point: python -m ppo.train --env-id CartPole-v1 ..."""
 from __future__ import annotations
 
 import argparse
@@ -98,7 +98,7 @@ def train(cfg: Config) -> None:
             for group in optimizer.param_groups:
                 group["lr"] = lr_now
 
-            # ---- rollout (fresh buffer per iteration: only the frozen contract is used) ----
+            # ---- rollout (a fresh buffer is built every iteration) ----
             buffer = RolloutBuffer(cfg.num_steps, cfg.num_envs, (obs_dim,), act_shape, cfg.device)
             for _ in range(cfg.num_steps):
                 global_step += cfg.num_envs

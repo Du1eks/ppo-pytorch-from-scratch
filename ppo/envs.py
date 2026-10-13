@@ -1,4 +1,4 @@
-"""Environment construction (Session B).
+"""Environment construction.
 
 Vector env layout (innermost to outermost):
 

@@ -1,4 +1,4 @@
-"""Actor-critic network (Session A)."""
+"""Actor-critic network."""
 from __future__ import annotations
 
 import math

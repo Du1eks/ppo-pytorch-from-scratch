@@ -1,4 +1,4 @@
-"""PPO update step (Session A)."""
+"""PPO update step."""
 from __future__ import annotations
 
 from typing import Dict

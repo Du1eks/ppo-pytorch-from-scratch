@@ -1,4 +1,4 @@
-"""Rollout storage, GAE and minibatching (Session A)."""
+"""Rollout storage, GAE and minibatching."""
 from __future__ import annotations
 
 from typing import Iterator, Tuple

@@ -1,4 +1,4 @@
-"""CSV/JSON run logging (Session B)."""
+"""CSV/JSON run logging."""
 from __future__ import annotations
 
 import csv

@@ -106,7 +106,7 @@ def test_runs_with_different_seeds_do_not_collide(tmp_path):
     assert len(read_csv(b.run_dir / "progress.csv")) == 1
 
 
-# ---- Config helpers (frozen contract) -------------------------------------------------------------
+# ---- Config helpers -------------------------------------------------------------
 
 def test_config_derived_sizes():
     cfg = Config(total_timesteps=10_000, num_envs=4, num_steps=128, num_minibatches=4)
