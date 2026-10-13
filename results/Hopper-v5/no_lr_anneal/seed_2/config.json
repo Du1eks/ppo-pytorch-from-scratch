@@ -1,0 +1,30 @@
+{
+  "env_id": "Hopper-v5",
+  "seed": 2,
+  "run_name": "no_lr_anneal",
+  "out_dir": "results",
+  "device": "cpu",
+  "total_timesteps": 1000000,
+  "num_envs": 1,
+  "num_steps": 2048,
+  "update_epochs": 10,
+  "num_minibatches": 32,
+  "lr": 0.0003,
+  "anneal_lr": false,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "use_gae": true,
+  "clip_coef": 0.2,
+  "clip_vloss": true,
+  "norm_adv": true,
+  "ent_coef": 0.0,
+  "vf_coef": 0.5,
+  "max_grad_norm": 0.5,
+  "target_kl": 0.0,
+  "normalize_obs": true,
+  "normalize_reward": true,
+  "hidden_sizes": [
+    64,
+    64
+  ]
+}
